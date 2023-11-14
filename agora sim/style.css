@@ -1,0 +1,18 @@
+/* Adicione estilos CSS conforme necessário */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+}
