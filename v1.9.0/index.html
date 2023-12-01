@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="info-header">
+            <div class="titulo">
+                <h1>Gráficos</h1>
+            </div>
+            <div class="autor">
+                <h3>por: Pedro Miguel Cavalcanti Almeida</h3>
+            </div>
+        </div>    
+    </header>
+    <section class="mainbody">
+        <div class="sidebar">
+            <h3>home</h3>
+            <a class="sidebar-active" href="tag">dashboard 1</a>
+            <a href="tag">dashboard 2</a>
+            <br/>
+            <hr>
+            <h3>filtros</h3>
+            <select id="filtro">
+                <option value="filtro1">escola1</option>
+                <option value="filtro2">escola2</option>
+                <option value="filtro3">escola3</option>
+                <option value="filtro4">escola4</option>
+            </select>
+            <br/>
+            <hr>
+        </div>
+        <div class="content">           
+            <div class="caixas-container">
+                <div class="caixa">
+                    <canvas id="canvas1"></canvas>
+                </div>
+                <div class="caixa">
+                    <canvas id="canvas2"></canvas>
+                </div>
+                <div class="caixa">
+                    <canvas id="canvas3"></canvas>
+                </div>
+                <div class="caixa">
+                    <canvas id="canvas4"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+    </main>
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>

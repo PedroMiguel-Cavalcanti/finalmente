@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+header {
+    height: 100px;
+    background-color: rgb(36, 78, 170);
+    padding: 10px 0;
+}
+
+.info-header {
+    color: white;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav label,
+nav input,
+nav button,
+nav select {
+    margin-right: 10px;
+}
+
+.mainbody {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 20%; 
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.sidebar h3 {
+    color: #333;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #555;
+}
+
+.sidebar a:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.sidebar a.sidebar-active {
+    background-color: rgb(240, 240, 240);
+    font-weight: bold;
+    border-left: 4px solid rgb(36, 78, 170);
+}
+
+.content {
+    flex: 1;
+    min-height: 100%;
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    position: relative;
+}
+
+.titulo-content {
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.caixas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.caixa {
+    border-radius: 10px;
+    flex: 1;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .caixas-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.content canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+}
